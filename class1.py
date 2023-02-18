@@ -1,3 +1,6 @@
+
+#MATPLOTLIB LEARNING TUTORIAL 01
+
 from matplotlib import pyplot as plt
 # plt.xkcd() This for the styling
 

@@ -5,6 +5,7 @@ plt.style.use('fivethirtyeight')
 
 ages_x = [25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35]
 
+#for creating indiviual bar
 X_indexes=np.arange(len(ages_x))
 width=0.25
 

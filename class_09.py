@@ -1,4 +1,5 @@
 #Plotting the time series data
+#working with the data and matplotlib
 
 import pandas as pd
 from datetime import datetime,timedelta
@@ -34,6 +35,11 @@ plt.gca().xaxis.set_major_formatter(date_format)
 
 #play with dataset means a csv file
 data=pd.read_csv('data3.csv')
+
+# To replace a date range wise 
+data['Date'] = pd.to_datetime(data['Date'])
+data.sort_values('Date', inplace=True)
+
 price_date=data['Date']
 price_close=data['Close']
 
@@ -41,6 +47,7 @@ plt.plot_date(price_date,price_close,linestyle='solid')
 plt.gcf().autofmt_xdate()
 
 plt.title('Bitcoin Price')
+plt.savefig('class9_pic.png')
 plt.xlabel('Date')
 plt.ylabel('Closing Price')
 plt.tight_layout()

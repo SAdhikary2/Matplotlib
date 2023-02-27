@@ -16,7 +16,7 @@ with open('data4.csv','w') as csv_file:
     csv_writer.writeheader()
     
 while True:
-    with open('data.csv','a') as csv_file:
+    with open('data4.csv','a') as csv_file:
         csv_writer=csv.DictWriter(csv_file,fieldnames=fieldname)
 
         info={

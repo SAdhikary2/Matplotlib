@@ -33,10 +33,6 @@ def animate(i):
 ani=FuncAnimation(plt.gcf(),animate,interval=1000) #to generate the live plot animated pot
 
 plt.tight_layout()
+plt.savefig('live_data.png')
 plt.show()
 
-
-# data = pd.read_csv('data.csv')
-# x = data['x_value']
-# y1 = data['total_1']
-# y2 = data['total_2']
